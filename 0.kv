@@ -1,0 +1,22 @@
+#:kivy 1.8.0
+# 0: homepage
+RootWidget:
+
+    GridLayout:
+        rows: 3
+        cols: 1
+        padding: 0
+        spacing: 6
+
+        Label:
+            text: "Welcome"
+            font_size: 90
+
+        Label:
+            text: "Do you need to take medication today?"
+            font_size: 60
+        Button:
+            text: "Continue"
+            font_size: 70
+            on_press: app.medsTaken('1')
+

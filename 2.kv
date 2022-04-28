@@ -1,0 +1,27 @@
+#:kivy 1.8.0
+# 2: Yes
+RootWidget:
+
+    # fill the container
+    GridLayout:
+        id: container
+        rows: 2
+        cols: 1
+        padding: 0
+        spacing: 3
+
+        Label:
+            text: 'Great! See you tomorrow!'
+            font_size: 60
+
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 0
+            spacing: 1
+            size_hint: 1, 1
+
+            Button:
+                size_hint: 1, 1
+                text: 'Back to home'
+                font_size: 60
+                on_release: app.medsTaken('0')

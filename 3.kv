@@ -1,0 +1,29 @@
+#:kivy 1.8.0
+# 3: No
+RootWidget:
+
+    # fill the container
+    GridLayout:
+        id: container
+        rows: 2
+        cols: 1
+        padding: 0
+        spacing: 3
+
+        Label:
+            text: 'Please take them now'
+            font_size: 80
+
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 0
+            spacing: 1
+            size_hint: 1, 1
+
+            Button:
+                size_hint: 1, 1
+                text: 'Okay'
+                font_size: 90
+                on_release: app.medsTaken('1')
+
+
